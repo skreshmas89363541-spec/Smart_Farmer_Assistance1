@@ -59,4 +59,42 @@
             </label>
 
             <select id="season">
-                <option value="">Choose Season</option> 
+                <option value="">Choose Season</option>
+                <option value="Kharif">Kharif</option>
+                <option value="Rabi">Rabi</option>
+                <option value="Zaid">Zaid</option>
+            </select>
+
+            <label id="temperatureLabel" for="temperature">
+                Temperature
+            </label>
+
+            <select id="temperature">
+                <option value="">Choose Temperature</option>
+                <option value="Low">Low</option>
+                <option value="Moderate">Moderate</option>
+                <option value="High">High</option>
+            </select>
+
+            <button id="suggestBtn" type="button">
+                Get Farming Guidance
+            </button>
+
+            <div id="result">
+                Your farming guidance will appear here.
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p id="footerText">
+            Smart Farmer Assistance | Version 1.0
+        </p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
