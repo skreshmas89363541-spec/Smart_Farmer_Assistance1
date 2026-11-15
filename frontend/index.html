@@ -1,35 +1,62 @@
 
-            <label id="temperatureLabel" for="temperature">
-                Temperature
-            </label>
+<!DOCTYPE html>
+<html lang="en">
 
-            <select id="temperature">
-                <option value="">Choose Temperature</option>
-                <option value="Low">Low</option>
-                <option value="Moderate">Moderate</option>
-                <option value="High">High</option>
-            </select>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            <button id="suggestBtn" type="button">
-                Get Farming Guidance
-            </button>
+    <title>Smart Farmer Assistance</title>
 
-            <div id="result">
-                Your farming guidance will appear here.
-            </div>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
 
+<body>
+
+    <header>
+        <h1 id="title">🌱 Smart Farmer Assistance</h1>
+        <p id="subtitle">Your Smart Companion for Farming</p>
+    </header>
+
+    <main>
+
+        <section class="welcome">
+            <h2 id="welcome">Welcome, Farmer!</h2>
+            <p id="welcomeText">
+                Get useful guidance for better farming.
+            </p>
         </section>
 
-    </main>
+        <section class="form-section">
 
-    <footer>
-        <p id="footerText">
-            Smart Farmer Assistance | Version 1.0
-        </p>
-    </footer>
+            <h2 id="formTitle">Enter Your Farm Details</h2>
 
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+            <label id="languageLabel" for="language">
+                Select Language
+            </label>
 
-</body>
-</html>
+            <select id="language">
+                <option value="en">English</option>
+                <option value="te">తెలుగు</option>
+                <option value="hi">हिंदी</option>
+            </select>
 
+            <label id="soilLabel" for="soil">
+                Select Soil Type
+            </label>
+
+            <select id="soil">
+                <option value="">Choose Soil</option>
+                <option value="Black">Black Soil</option>
+                <option value="Red">Red Soil</option>
+                <option value="Sandy">Sandy Soil</option>
+                <option value="Wet">Wet Soil</option>
+            </select>
+
+            <label id="seasonLabel" for="season">
+                Select Season
+            </label>
+
+            <select id="season">
+                <option value="">Choose Season</option> 
